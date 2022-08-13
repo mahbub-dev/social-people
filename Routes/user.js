@@ -4,16 +4,16 @@ const { verifyToken } = require("../Middlware/tokenVerify");
 const User = require("../Models/User");
 
 // get user
-router.get("/", verifyToken, async (req, res) => {
-	try {
-		const user = await User.findById({ _id: req.user.id });
-		user && res.status(200).json(user);
-	} catch (err) {
-		console.log(err);
-	}
-});
+// router.get("/", verifyToken, async (req, res) => {
+// 	try {
+// 		const user = await User.findById({ _id: req.user.id });
+// 		user && res.status(200).json(user);
+// 	} catch (err) {
+// 		console.log(err);
+// 	}
+// });
 // get all user
-router.get("/team", verifyToken, async (req, res) => {
+router.get("/", async (req, res) => {
 	try {
 		const allUser = await User.find();
 		res.status(200).json(allUser);
