@@ -7,8 +7,9 @@ function Home() {
 	useEffect(() => {
 		getUser((res) => {
 			setData(res);
+			console.log(res)
 		});
-	}, [data]);
+	}, []);
 	return (
 		<div>
 			{data.map((item) => (
