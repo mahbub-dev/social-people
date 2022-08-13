@@ -12,11 +12,7 @@ function Home() {
 	}, []);
 	return (
 		<div>
-			{data.map((item) => (
-				<div key={item._id}>
-					<p style={{ color: "black" }}>{item.name}</p>
-				</div>
-			))}
+
 		</div>
 	);
 }
