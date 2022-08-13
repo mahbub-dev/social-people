@@ -1,0 +1,24 @@
+﻿.success {
+	transition: opacity 0.5s;
+	position: absolute;
+	margin: 2rem auto;
+	color: rgb(160, 153, 92);
+	background-color: blanchedalmond;
+	width: 300px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	border-radius: 5px;
+	button {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 10px;
+		border: none;
+		background-color: blanchedalmond;
+		cursor: pointer;
+		color: rgb(160, 153, 92);
+	}
+}

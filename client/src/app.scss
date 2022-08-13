@@ -1,0 +1,51 @@
+﻿@import "./responsive.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap");
+:root {
+	--fonts: "Noto Sans", sans-serif;
+	--bg-color: #b93160;
+	--font-form: "Titillium Web", sans-serif;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.app {
+	overflow: hidden;
+	background: var(--bg-color);
+	font-family: var(--fonts);
+	position: relative;
+	min-height: 100vh;
+	text-align: center;
+	a {
+		color: white;
+		text-decoration: none;
+		&:active {
+			color: #b93160;
+		}
+	}
+}
+.section {
+	@include large-up {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+	@include large-down {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	@include medium-down {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	@include small-down {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-top: 1rem;
+		padding-top: 1rem;
+	}
+	position: relative;
+}
